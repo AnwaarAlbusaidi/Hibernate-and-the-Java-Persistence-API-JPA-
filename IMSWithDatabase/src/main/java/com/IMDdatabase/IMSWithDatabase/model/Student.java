@@ -1,21 +1,14 @@
 package com.IMDdatabase.IMSWithDatabase.model;
 
+import jakarta.persistence.*;
 @Entity
-@Table(name = "student")
+@Table(name = "Student")
 public class Student {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
-    @Column(name = "name")
-    private String name;
-
-    @Column(name = "email")
-    private String email;
-
-    @Column(name = "age")
-    private Integer age;
-
-    // Getters and setters
+    public int id;
+    @Column
+    public String name;
+    @Column
+    public String email;
 }
