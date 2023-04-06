@@ -1,6 +1,6 @@
 package com.IMDdatabase.IMSWithDatabase.service;
 
-import com.IMDdatabase.IMSWithDatabase.Repositry.TeacherRepository;
+import com.IMDdatabase.IMSWithDatabase.Repository.TeacherRepository;
 import com.IMDdatabase.IMSWithDatabase.model.Teacher;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
