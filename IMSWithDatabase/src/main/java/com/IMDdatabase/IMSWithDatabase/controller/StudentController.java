@@ -2,6 +2,7 @@ package com.IMDdatabase.IMSWithDatabase.controller;
 
 import com.IMDdatabase.IMSWithDatabase.model.Student;
 import com.IMDdatabase.IMSWithDatabase.service.StudentService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -24,7 +25,7 @@ public class StudentController {
         return studentService.getSpecificStudent(id);
     }
     @PostMapping
-    public Student registerStudent(@RequestBody Student student){
+    public Student registerStudent(@Valid @RequestBody Student student){
         studentService.registerStudnet(student);
         return student;
     }

@@ -14,4 +14,7 @@ public class Teacher {
         public String email;
         @Column
         public double salary;
+
+        @OneToOne(mappedBy = "mentor")
+        public Course course;
 }
