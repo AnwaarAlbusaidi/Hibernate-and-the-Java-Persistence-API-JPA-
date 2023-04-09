@@ -1,21 +1,17 @@
 package com.IMDdatabase.IMSWithDatabase.model;
 
-@Entity
-@Table(name = "student")
-public class Student {
+import jakarta.persistence.*;
+import jakarta.validation.constraints.Pattern;
 
+@Entity
+@Table(name = "Student")
+public class Student {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
-    @Column(name = "name")
-    private String name;
-
-    @Column(name = "email")
-    private String email;
-
-    @Column(name = "age")
-    private Integer age;
-
-    // Getters and setters
+    public int id;
+    @Column
+    public String name;
+    @Column
+    @Pattern(regexp = "^[a-z|A-Z|.]+@+[a-z|A-Z]+\\.[a-z|A-Z]{2,}$")
+    public String email;
 }
