@@ -11,17 +11,18 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping(path = "/api/student")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class StudentController {
     @Autowired
     StudentService studentService;
 
     @GetMapping
-    public List<Student> getTeacher(){
+    public List<Student> getAllStudent(){
         return studentService.getListOfStudentInfo();
     }
 
     @GetMapping(path="/{id}")
-    public Optional<Student> getTeacher(@PathVariable int id){
+    public Optional<Student> getStudent(@PathVariable int id){
         return studentService.getSpecificStudent(id);
     }
     @PostMapping
@@ -31,11 +32,11 @@ public class StudentController {
     }
 
     @PutMapping(path="/{id}")
-    public  Optional<Student> updateTeacher(@PathVariable int id, @RequestBody Student student){
+    public  Optional<Student> updateStudent(@PathVariable int id, @RequestBody Student student){
         return studentService.updateStudentInfo(id,student);
     }
     @DeleteMapping(path="/{id}")
-    public Optional<Student> DeleteTeacher(@PathVariable int id){
+    public Optional<Student> DeleteStudent(@PathVariable int id){
         return studentService.deleteStudent(id);
     }
 }

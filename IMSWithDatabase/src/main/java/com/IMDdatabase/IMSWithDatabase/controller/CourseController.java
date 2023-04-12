@@ -10,6 +10,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping(path = "/api/courses")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class CourseController {
 
     @Autowired

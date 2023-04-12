@@ -31,6 +31,7 @@ public class CourseService {
 
         foundCourse.ifPresent((currentCourse)->{
             currentCourse.name = updateCourse.name;
+            currentCourse.enrolledStudent = updateCourse.enrolledStudent;
             courseRepository.save(currentCourse);
         });
 
