@@ -2,8 +2,9 @@ package com.IMDdatabase.IMSWithDatabase.model;
 
 import jakarta.persistence.*;
 
-public class Teacher{
-
+@Entity
+@Table(name= "Staff")
+public class Staff {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     public int id;
@@ -13,8 +14,4 @@ public class Teacher{
     public String email;
     @Column
     public double salary;
-
-    @OneToOne(mappedBy = "mentor")
-    public Course course;
-
 }

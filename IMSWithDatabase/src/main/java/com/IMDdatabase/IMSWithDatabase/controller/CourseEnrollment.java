@@ -24,5 +24,6 @@ public class CourseEnrollment {
     @PostMapping
     public void courseEnrollment(@RequestBody CourseEnrollment courseEnrollment)
     {
+
     }
 }
