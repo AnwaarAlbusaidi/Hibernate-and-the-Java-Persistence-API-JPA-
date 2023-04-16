@@ -2,6 +2,8 @@ package com.IMDdatabase.IMSWithDatabase.model;
 
 import jakarta.persistence.*;
 
+@Entity
+@Table(name = "Teacher")
 public class Teacher{
 
     @Id

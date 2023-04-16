@@ -1,5 +1,6 @@
 package com.IMDdatabase.IMSWithDatabase.controller;
 
+
 import com.IMDdatabase.IMSWithDatabase.model.Teacher;
 import com.IMDdatabase.IMSWithDatabase.service.TeacherService;
 import org.springframework.beans.factory.annotation.Autowired;

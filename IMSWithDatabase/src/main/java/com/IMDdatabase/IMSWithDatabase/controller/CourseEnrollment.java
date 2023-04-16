@@ -1,8 +1,5 @@
 package com.IMDdatabase.IMSWithDatabase.controller;
 
-
-import com.IMDdatabase.IMSWithDatabase.model.Course;
-import com.IMDdatabase.IMSWithDatabase.model.Student;
 import com.IMDdatabase.IMSWithDatabase.service.CourseService;
 import com.IMDdatabase.IMSWithDatabase.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
