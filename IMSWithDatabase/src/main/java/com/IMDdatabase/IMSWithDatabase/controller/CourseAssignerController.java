@@ -13,25 +13,38 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Optional;
 
+/**
+ * Controller class for assigning a mentor to a course.
+ */
 @RestController
 @RequestMapping(path = "/api/assigner")
 public class CourseAssignerController {
 
     @Autowired
     CourseService courseService;
+
     @Autowired
     TeacherService teacherService;
-    @PostMapping
-    public CourseAssigner assignMentorToCourse(@RequestBody CourseAssigner courseAssigner){
-        Optional<Course> optionalCourse= courseService.getSpecificCourse(courseAssigner.course_id);
-        Optional<Teacher> optionalTeacher= teacherService.getSpecificTeacher(courseAssigner.teacher_id);
 
-        optionalCourse.ifPresent((course)->{
-            optionalTeacher.ifPresent((teacher)->{
+    /**
+     * Endpoint for assigning a mentor to a course.
+     *
+     * @param courseAssigner The CourseAssigner object containing the course and teacher information.
+     * @return The CourseAssigner object with updated mentor information.
+     */
+    @PostMapping
+    public CourseAssigner assignMentorToCourse(@RequestBody CourseAssigner courseAssigner) {
+        Optional<Course> optionalCourse = courseService.getSpecificCourse(courseAssigner.course_id);
+        Optional<Teacher> optionalTeacher = teacherService.getSpecificTeacher(courseAssigner.teacher_id);
+
+        optionalCourse.ifPresent((course) -> {
+            optionalTeacher.ifPresent((teacher) -> {
                 course.mentor= teacher;
                 courseService.rigisterCourse(course);
             });
         });
+
         return courseAssigner;
     }
 }
+
