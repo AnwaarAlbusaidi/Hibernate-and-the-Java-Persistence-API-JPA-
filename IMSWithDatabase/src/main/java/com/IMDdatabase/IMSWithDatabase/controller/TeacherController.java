@@ -1,5 +1,6 @@
 package com.IMDdatabase.IMSWithDatabase.controller;
 
+
 import com.IMDdatabase.IMSWithDatabase.model.Teacher;
 import com.IMDdatabase.IMSWithDatabase.service.TeacherService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,8 +27,8 @@ public class TeacherController {
     }
     @PostMapping
     public Teacher registerTeacher(@RequestBody Teacher teacher){
-       teacherService.hireTeacher(teacher);
-       return teacher;
+        teacherService.hireTeacher(teacher);
+        return teacher;
     }
 
     @PutMapping(path="/{id}")

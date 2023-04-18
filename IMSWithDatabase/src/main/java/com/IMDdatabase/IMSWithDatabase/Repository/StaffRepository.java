@@ -1,10 +1,9 @@
 package com.IMDdatabase.IMSWithDatabase.Repository;
 
-
-import com.IMDdatabase.IMSWithDatabase.model.Teacher;
+import com.IMDdatabase.IMSWithDatabase.model.Staff;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface TeacherRepository extends JpaRepository<Teacher,Integer> {
+public interface StaffRepository extends JpaRepository<Staff,Integer> {
 }

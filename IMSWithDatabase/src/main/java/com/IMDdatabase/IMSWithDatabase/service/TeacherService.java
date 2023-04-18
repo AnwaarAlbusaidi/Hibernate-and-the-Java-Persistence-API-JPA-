@@ -14,11 +14,10 @@ public class TeacherService {
     @Autowired
     TeacherRepository teacherRepository;
 
-    public Optional <Teacher> getSpecificTeacher(int id ){
+    public Optional<Teacher> getSpecificTeacher(int id ){
         return teacherRepository.findById(id);
     }
     public List<Teacher> getTeacherInfo(){
-
         return teacherRepository.findAll();
     }
     public Teacher hireTeacher(Teacher teacher ){
@@ -28,7 +27,7 @@ public class TeacherService {
 
     public  Optional<Teacher> fireTeacher(int id){
         Optional<Teacher> teacher = getSpecificTeacher(id);
-       teacherRepository.deleteById(id);
+        teacherRepository.deleteById(id);
         return teacher;
     }
 
