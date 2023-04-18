@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Staff Management - Institute Management System</title>
+	<link rel="stylesheet" href="style2.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+                <li><a href="student.html">Student</a></li>
+                <li><a href="staff.html">Staff</a></li>
+                <li><a href="Teacher.html">Teacher</a></li>
+                <li><a href="course.html">Course</a></li>
+				<li><button id="logoutBtn">Logout</button></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+        <section>
+            <h1>Course Management</h1>
+            <div id="btn-container">
+                <button id="create-btn">Create Course</button>
+                <button id="get-btn">Get Course Information</button>
+                <button id="update-btn">Update Course</button>
+                <button id="delete-btn">Delete Course</button>
+                <button id="assign-btn">Assign Course to Teacher</button>
+            </div>
+        </section>
+        <section>
+                <form id="Course-form">        
+                    <label for="Course-name">Course Name:</label>
+                    <input type="text" id="Course-name" name="Course-name" required>
+
+                    <button type="submit" id="submit-btn">Submit</button>
+                </form>
+        </section>
+        <section>
+                <form id="Course-update-form">
+                    <label for="Course-id" id="LS" >Course ID:</label>
+                    <input type="text" id="Course-id" name="Course-id">
+                    
+                    <label for="CourseUpdatedName">Course Name:</label>
+                    <input type="text" id="CourseUpdatedName" name="CourseUpdatedName" required>
+
+                    <button type="submit" id="submit-btn">update</button>
+                </form>
+        </section>
+        <section>
+            <form id="Course-form-delete">
+                <label for="CourseID">Course ID:</label>
+                <input type="text" id="CourseID" name="CourseID">
+                <button type="submit" id="submit-btn">Submit</button>
+            </form>
+        </section>
+        <section>
+          <form id="assign-Course-to-teacher">
+              <label for="Courseid">Course ID:</label>
+              <input type="text" id="Courseid" name="Courseid">
+
+              <label for="Teacherid">Teacher ID:</label>
+              <input type="text" id="Teacherid" name="Teacherid">
+
+              <button type="submit" id="submit-btn">Submit</button>
+          </form>
+      </section>
+          <section>
+            <table id="Course-table" style="display: none;">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Course Name</th>
+                  <th>Teacher ID</th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </section>
+	</main>
+	<footer>
+		<p>&copy; Institute Management System</p>
+	</footer>
+    <script src="course.js"></script>
+	<script>
+        const logoutBtn = document.getElementById('logoutBtn');
+        logoutBtn.addEventListener('click', () => {
+          const confirmed = confirm('Are you sure you want to logout?');
+          if (confirmed) {
+            localStorage.removeItem('username');
+            localStorage.removeItem('password');
+            window.location.href = 'login.html'; // redirect the user to the login page
+          }
+        });
+      </script>
+</body>
+</html>

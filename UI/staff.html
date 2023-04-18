@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Staff Management - Institute Management System</title>
+	<link rel="stylesheet" href="style2.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+                <li><a href="student.html">Student</a></li>
+                <li><a href="staff.html">Staff</a></li>
+                <li><a href="Teacher.html">Teacher</a></li>
+                <li><a href="course.html">Course</a></li>
+				<li><button id="logoutBtn">Logout</button></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+        <section>
+            <h1>Staff Management</h1>
+            <div id="btn-container">
+                <button id="create-btn">Hire Staff</button>
+                <button id="get-btn">Get Staff</button>
+                <button id="update-btn">Update Staff</button>
+                <button id="delete-btn">Fire Staff</button>
+            </div>
+        </section>
+        <section>
+                <form id="Staff-form">        
+                    <label for="staff-name">Staff Name:</label>
+                    <input type="text" id="staff-name" name="staff-name" required>
+                    
+                    <label for="staff-email">Staff Email:</label>
+                    <input type="email" id="staff-email" name="staff-email" required>
+
+					<label for="staff-Salary">Staff Salary:</label>
+                    <input type="text" id="staff-Salary" name="staff-Salary" required>
+
+                    <button type="submit" id="submit-btn">Submit</button>
+                </form>
+        </section>
+        <section>
+                <form id="Staff-update-form">
+                    <label for="staff-id" id="LS" >Staff ID:</label>
+                    <input type="text" id="staff-id" name="staff-id">
+                    
+                    <label for="staffUpdatedName">Staff Name:</label>
+                    <input type="text" id="staffUpdatedName" name="staffUpdatedName" required>
+                    
+                    <label for="StaffUpdatedEmail">Staff Email:</label>
+                    <input type="email" id="StaffUpdatedEmail" name="StaffUpdatedEmail" required>
+
+					<label for="StaffUpdatedSalary">Staff Salary:</label>
+                    <input type="text" id="StaffUpdatedSalary" name="StaffUpdatedSalary" required>
+
+                    <button type="submit" id="submit-btn">update</button>
+                </form>
+        </section>
+        <section>
+            <form id="Staff-form-delete">
+                <label for="StaffID">Staff ID:</label>
+                <input type="text" id="StaffID" name="StaffID">
+                <button type="submit" id="submit-btn">Submit</button>
+            </form>
+        </section>
+          <section>
+            <table id="Staff-table" style="display: none;">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Name</th>
+                  <th>Email</th>
+				  <th>Salary</th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </section>
+	</main>
+	<footer>
+		<p>&copy; Institute Management System</p>
+	</footer>
+    <script src="StaffScript.js"></script>
+	<script>
+        const logoutBtn = document.getElementById('logoutBtn');
+        logoutBtn.addEventListener('click', () => {
+          const confirmed = confirm('Are you sure you want to logout?');
+          if (confirmed) {
+            localStorage.removeItem('username');
+            localStorage.removeItem('password');
+            window.location.href = 'login.html'; // redirect the user to the login page
+          }
+        });
+      </script>
+</body>
+</html>
