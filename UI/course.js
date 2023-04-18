@@ -13,8 +13,11 @@ const CourseIdLabel = document.querySelector("#Course-id-label");
  // retrieve the stored username and password from the localStorage
  const storedUsername = localStorage.getItem('username');
  const storedPassword = localStorage.getItem('password');
- //-------------------------------------------------------------------------------------------------
- createBtn.addEventListener('click', () => {
+ 
+ //----------------------------------GET-------------------------------------------------------
+// Add event listener for createBtn click event
+createBtn.addEventListener('click', () => {
+  // Set display styles for forms
   CourseCreateForm.style.display = 'block';
   CourseTable.parentElement.style.display = 'none';
   CourseUpdateForm.style.display = 'none';
@@ -22,11 +25,14 @@ const CourseIdLabel = document.querySelector("#Course-id-label");
   assignForm.style.display = 'none';
 });
 
+// Add event listener for CourseCreateForm submit event
 CourseCreateForm.addEventListener('submit', (event) => {
   event.preventDefault();
 
+  // Get input value from CourseName field
   const CourseName = document.querySelector('#Course-name').value;
 
+  // Fetch POST request to add a new course
   fetch('http://localhost:8080/api/courses', {
     method: 'POST',
     headers: { 
@@ -40,20 +46,24 @@ CourseCreateForm.addEventListener('submit', (event) => {
   .then(response => {
     if (response.ok) {
       alert('Course added successfully');
-      CourseCreateForm.reset();
+      CourseCreateForm.reset(); // Reset form fields
     } else {
       alert('An error occurred while adding the Course');
     }
   })
   .catch(error => console.error(error));
 });
-//-------------------------------Get----------------------------------------------------
+
+// Add event listener for getBtn click event
 getBtn.addEventListener('click', () => {
+  // Set display styles for forms
   CourseCreateForm.style.display = 'none';
   CourseUpdateForm.style.display = 'none';
   deleteForm.style.display = 'none';
   assignForm.style.display = 'none';
-  CourseTable.innerHTML = ''; // clear existing table rows
+  CourseTable.innerHTML = ''; // Clear existing table rows
+
+  // Fetch GET request to retrieve courses data
   fetch('http://localhost:8080/api/courses', {
     method: 'GET',
     headers: {
@@ -63,17 +73,18 @@ getBtn.addEventListener('click', () => {
   })
     .then(response => response.json())
     .then(data => {
-      // iterate over courses and add them to the table
+      // Iterate over courses and add them to the table
       data.forEach(course => {
         const row = document.createElement('tr');
         const idCell = document.createElement('td');
         const nameCell = document.createElement('td');
-        const teacherCell = document.createElement('td'); // changed variable name to teacherCell
+        const teacherCell = document.createElement('td'); // Changed variable name to teacherCell
 
         idCell.textContent = course.courseID;
         nameCell.textContent = course.name;
        
         if(course.teacher_id){
+          // Fetch GET request to retrieve teacher data for the course
           fetch(`http://localhost:8080/api/teacher/${course.teacher_id}`, {
             method: 'GET',
             headers: {
@@ -102,11 +113,12 @@ getBtn.addEventListener('click', () => {
 
         CourseTable.appendChild(row);
       });
-      // display the table
+      // Display the table
       CourseTable.parentElement.style.display = 'block';
     })
     .catch(error => console.error(error));
 });
+
 
 //------------------------------update----------------------------------------------------
 updateBtn.addEventListener('click', () => {
