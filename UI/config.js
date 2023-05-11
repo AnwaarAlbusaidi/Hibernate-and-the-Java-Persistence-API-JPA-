@@ -8,26 +8,25 @@
       // add the username and password to the localStorage
   localStorage.setItem('username', username);
   localStorage.setItem('password', password);
-  
-    // submit the username and password to the API endpoint
-    fetch('http://localhost:8080/api/student', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': 'Basic ' + btoa(username + ":" + password)
-      },
-      body: JSON.stringify({username, password})
-    })
-    .then(response => {
-      if (response.ok) {
-        // redirect the user to a new page
-        window.location.href = 'index.html';
-      } else {
-        // display an error message to the user
-        throw new Error('Incorrect username or password. Please try again.');
-      }
-    })
-    .catch(error => {
-      alert(error.message);
-    });
+
+  fetch('http://localhost:8080/api/login', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': 'Basic ' + btoa(username + ":" + password)
+    },
+    body: JSON.stringify({username, password})
+  })
+  .then(response => {
+    if (response.ok) {
+      // redirect the user to a new page
+      window.location.href = 'index1.html';
+    } else {
+      // display an error message to the user
+      throw new Error('Incorrect username or password. Please try again.');
+    }
+  })
+  .catch(error => {
+    alert(error.message);
   });
+});

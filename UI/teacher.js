@@ -132,7 +132,7 @@ deleteBtn.addEventListener('click', () => {
 deleteForm.addEventListener('submit', (event) => { 
     event.preventDefault();  
 
-    const teacherId = document.querySelector('#StaffID').value;
+    const teacherId = document.querySelector('#TeacherID').value;
 
     const confirmDelete = confirm(`Are you sure you want to delete student with ID ${teacherId}?`);
     if (confirmDelete) {

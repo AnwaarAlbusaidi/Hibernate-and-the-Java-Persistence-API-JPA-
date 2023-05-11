@@ -27,7 +27,7 @@ public class StudentController {
     }
     @PostMapping
     public Student registerStudent(@Valid @RequestBody Student student){
-        studentService.registerStudnet(student);
+        studentService.registerStudent(student);
         return student;
     }
 

@@ -104,6 +104,7 @@ getStudentBtn.addEventListener('click', () => {
   deleteForm.style.display = 'none';
   getForm.style.display = 'block';
   studentGetTable.innerHTML = ''; // clear existing table rows
+  getForm.reset();
 });
 
 getForm.addEventListener('submit', async (event) => { // Updated to use async function for better error handling
@@ -162,6 +163,7 @@ getForm.addEventListener('submit', async (event) => { // Updated to use async fu
         studentGetTable.parentElement.style.display = 'block';
 
         console.log("Success!");
+        getForm.reset();
       } else {
         console.error('Failed to fetch student image');
       }
@@ -220,13 +222,13 @@ deleteBtn.addEventListener('click', () => {
 deleteForm.addEventListener('submit', (event) => { 
     event.preventDefault();  
 
-    const id = document.querySelector('#student_ID').value;
+    const studentId = document.querySelector('#student_ID').value;
 
-    const confirmDelete = confirm(`Are you sure you want to delete student with ID ${id}?`);
+    const confirmDelete = confirm(`Are you sure you want to delete student with ID ${studentId}?`);
 
 
     if (confirmDelete) {
-      fetch(`http://localhost:8080/api/student/${id}`, {
+      fetch(`http://localhost:8080/api/student/${studentId}`, {
         method: 'DELETE',
     headers: {'Content-Type': 'application/json',
              'Authorization': 'Basic ' + btoa(storedUsername + ":" + storedPassword)},
