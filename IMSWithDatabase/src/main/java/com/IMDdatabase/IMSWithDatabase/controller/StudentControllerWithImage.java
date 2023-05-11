@@ -30,7 +30,7 @@ public class StudentControllerWithImage {
         Student newStudent = new Student();
         newStudent.name = name;
         newStudent.email = email;
-        Student saveStudent = studentService.registerStudnet(newStudent);
+        Student saveStudent = studentService.registerStudent(newStudent);
         if (image != null) {
             saveStudent.StudentImage = Integer.toString(saveStudent.getId()) + "_" + saveStudent.getName() + ".jpg";
             FileUtils.writeByteArrayToFile(new File("./src/main/resources/static/Student_images/" + saveStudent.getStudentImage()), image.getBytes());

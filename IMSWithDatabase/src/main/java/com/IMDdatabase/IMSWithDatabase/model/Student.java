@@ -1,5 +1,6 @@
 package com.IMDdatabase.IMSWithDatabase.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Pattern;
 
@@ -21,6 +22,7 @@ public class Student {
     public String StudentImage;
 
     @ManyToMany(mappedBy = "enrolledStudent")
+    @JsonIgnore
     public Set<Course> registerCourses;
 
     public int getId() {

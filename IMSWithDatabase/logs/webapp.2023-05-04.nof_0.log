@@ -1,0 +1,274 @@
+2023-05-04 09:56:42.180 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-05-04 09:56:42.242 INFO  c.I.I.ImsWithDatabaseApplication - Starting ImsWithDatabaseApplication using Java 19.0.1 with PID 2020 (C:\Users\LAP-8\IdeaProjects\IMSWithDatabase\IMSWithDatabase\target\classes started by LAP-8 in C:\Users\LAP-8\IdeaProjects\IMSWithDatabase\IMSWithDatabase)
+2023-05-04 09:56:42.243 INFO  c.I.I.ImsWithDatabaseApplication - No active profile set, falling back to 1 default profile: "default"
+2023-05-04 09:56:43.205 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-04 09:56:43.283 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 67 ms. Found 4 JPA repository interfaces.
+2023-05-04 09:56:44.094 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-05-04 09:56:44.108 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-05-04 09:56:44.108 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-05-04 09:56:44.108 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-05-04 09:56:44.217 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-05-04 09:56:44.217 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1915 ms
+2023-05-04 09:56:44.408 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-04 09:56:44.492 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-04 09:56:44.680 WARN  org.hibernate.orm.deprecation - HHH90000021: Encountered deprecated setting [javax.persistence.validation.mode], use [jakarta.persistence.validation.mode] instead
+2023-05-04 09:56:44.867 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-05-04 09:56:45.112 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4899799b
+2023-05-04 09:56:45.114 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-05-04 09:56:45.195 INFO  SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-05-04 09:56:46.062 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-04 09:56:46.070 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-04 09:56:46.461 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-04 09:56:46.775 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 26 mappings in 'requestMappingHandlerMapping'
+2023-05-04 09:56:46.863 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /static/**] in 'resourceHandlerMapping'
+2023-05-04 09:56:46.867 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@659ac28c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@60688a97, org.springframework.security.web.context.SecurityContextHolderFilter@59bbf82e, org.springframework.security.web.header.HeaderWriterFilter@325e03b, org.springframework.web.filter.CorsFilter@242ebd3b, org.springframework.security.web.authentication.logout.LogoutFilter@5ce41f1f, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3085befb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@43e2b8da, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1ac68548, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5d2bc446, org.springframework.security.web.access.ExceptionTranslationFilter@23b087c3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@618e7761]
+2023-05-04 09:56:46.943 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-05-04 09:56:46.993 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-05-04 09:56:47.106 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-05-04 09:56:47.194 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-04 09:56:47.213 INFO  c.I.I.ImsWithDatabaseApplication - Started ImsWithDatabaseApplication in 5.496 seconds (process running for 6.338)
+2023-05-04 10:01:07.718 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-04 10:01:07.731 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-05-04 10:01:07.742 DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2023-05-04 10:01:07.744 DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2023-05-04 10:01:07.745 DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2023-05-04 10:01:07.794 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@4028aab2
+2023-05-04 10:01:07.796 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@501b296a
+2023-05-04 10:01:07.798 DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-05-04 10:01:07.798 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 66 ms
+2023-05-04 10:01:07.891 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.StudentController#registerStudent(Student)
+2023-05-04 10:01:07.933 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.StudentController#registerStudent(Student)
+2023-05-04 10:01:08.270 DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for POST "/error", parameters={}
+2023-05-04 10:01:08.277 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-05-04 10:01:08.366 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-05-04 10:01:08.369 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Thu May 04 10:01:08 GST 2023, status=401, error=Unauthorized, path=/api/student}]
+2023-05-04 10:01:08.455 DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 401
+2023-05-04 10:01:14.859 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.StudentController#registerStudent(Student)
+2023-05-04 10:01:14.898 DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for POST "/error", parameters={}
+2023-05-04 10:01:14.899 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-05-04 10:01:14.902 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-05-04 10:01:14.902 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Thu May 04 10:01:14 GST 2023, status=401, error=Unauthorized, path=/api/student}]
+2023-05-04 10:01:14.905 DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 401
+2023-05-04 10:01:34.166 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.StudentController#registerStudent(Student)
+2023-05-04 10:01:34.394 DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/student", parameters={}
+2023-05-04 10:01:34.395 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.StudentController#registerStudent(Student)
+2023-05-04 10:01:34.536 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [com.IMDdatabase.IMSWithDatabase.model.Student@2ff9c96d]
+2023-05-04 10:01:34.900 INFO  c.I.I.service.StudentService - Created student with id: 11
+2023-05-04 10:01:34.919 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-05-04 10:01:34.920 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [com.IMDdatabase.IMSWithDatabase.model.Student@2ff9c96d]
+2023-05-04 10:01:34.925 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2023-05-04 10:02:25.713 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.StudentController#getAllStudent()
+2023-05-04 10:02:25.936 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/student", parameters={}
+2023-05-04 10:02:25.937 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.StudentController#getAllStudent()
+2023-05-04 10:02:25.939 INFO  c.I.I.service.StudentService - Get all Student
+2023-05-04 10:02:26.293 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-05-04 10:02:26.293 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[com.IMDdatabase.IMSWithDatabase.model.Student@57cdd66c, com.IMDdatabase.IMSWithDatabase.model.Stude (truncated)...]
+2023-05-04 10:02:26.297 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2023-05-04 10:02:51.043 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.StudentControllerWithImage#registerStudent(String, String, MultipartFile)
+2023-05-04 10:02:51.049 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.StudentControllerWithImage#registerStudent(String, String, MultipartFile)
+2023-05-04 10:02:51.306 DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/student/withImage", parameters={multipart}
+2023-05-04 10:02:51.313 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.StudentControllerWithImage#registerStudent(String, String, MultipartFile)
+2023-05-04 10:02:51.347 INFO  c.I.I.service.StudentService - Created student with id: 12
+2023-05-04 10:02:51.370 INFO  c.I.I.service.StudentService - Het student with id: 12
+2023-05-04 10:02:51.435 INFO  c.I.I.service.StudentService - updated student with id: 12
+2023-05-04 10:02:51.437 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-05-04 10:02:51.437 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [com.IMDdatabase.IMSWithDatabase.model.Student@3e0c05a6]
+2023-05-04 10:02:51.440 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2023-05-04 10:02:59.420 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.StudentController#getAllStudent()
+2023-05-04 10:02:59.634 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/student", parameters={}
+2023-05-04 10:02:59.637 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.StudentController#getAllStudent()
+2023-05-04 10:02:59.639 INFO  c.I.I.service.StudentService - Get all Student
+2023-05-04 10:02:59.647 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-05-04 10:02:59.647 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[com.IMDdatabase.IMSWithDatabase.model.Student@65d6476a, com.IMDdatabase.IMSWithDatabase.model.Stude (truncated)...]
+2023-05-04 10:02:59.649 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2023-05-04 10:03:16.839 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.StudentController#getStudent(int)
+2023-05-04 10:03:16.845 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.StudentController#getStudent(int)
+2023-05-04 10:03:17.079 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/student/12", parameters={}
+2023-05-04 10:03:17.081 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.StudentController#getStudent(int)
+2023-05-04 10:03:17.093 INFO  c.I.I.service.StudentService - Het student with id: 12
+2023-05-04 10:03:17.117 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-05-04 10:03:17.118 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Optional[com.IMDdatabase.IMSWithDatabase.model.Student@1c35e8a1]]
+2023-05-04 10:03:17.120 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2023-05-04 10:03:17.131 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.StudentControllerWithImage#getStudentWithImage(int)
+2023-05-04 10:03:17.135 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.StudentControllerWithImage#getStudentWithImage(int)
+2023-05-04 10:03:17.348 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/student/withImage/12", parameters={}
+2023-05-04 10:03:17.349 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.StudentControllerWithImage#getStudentWithImage(int)
+2023-05-04 10:03:17.351 INFO  c.I.I.service.StudentService - Het student with id: 12
+2023-05-04 10:03:17.365 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Found 'Content-Type:image/jpeg' in response
+2023-05-04 10:03:17.373 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{-1, -40, -1, -32, 0, 16, 74, 70, 73, 70, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, -1, -31, 0, 46, 69, 120, 105 (truncated)...]
+2023-05-04 10:03:17.374 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2023-05-04 10:03:24.051 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.StudentController#getAllStudent()
+2023-05-04 10:03:24.273 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/student", parameters={}
+2023-05-04 10:03:24.274 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.StudentController#getAllStudent()
+2023-05-04 10:03:24.275 INFO  c.I.I.service.StudentService - Get all Student
+2023-05-04 10:03:24.285 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-05-04 10:03:24.285 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[com.IMDdatabase.IMSWithDatabase.model.Student@7ea516fe, com.IMDdatabase.IMSWithDatabase.model.Stude (truncated)...]
+2023-05-04 10:03:24.287 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2023-05-04 10:03:35.751 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.StudentController#updateStudent(int, Student)
+2023-05-04 10:03:35.763 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.StudentController#updateStudent(int, Student)
+2023-05-04 10:03:35.975 DEBUG o.s.web.servlet.DispatcherServlet - PUT "/api/student/11", parameters={}
+2023-05-04 10:03:35.976 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.StudentController#updateStudent(int, Student)
+2023-05-04 10:03:35.979 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [com.IMDdatabase.IMSWithDatabase.model.Student@7521a844]
+2023-05-04 10:03:35.981 INFO  c.I.I.service.StudentService - Het student with id: 11
+2023-05-04 10:03:36.003 INFO  c.I.I.service.StudentService - updated student with id: 11
+2023-05-04 10:03:36.004 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-05-04 10:03:36.005 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Optional[com.IMDdatabase.IMSWithDatabase.model.Student@5d63088a]]
+2023-05-04 10:03:36.007 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2023-05-04 10:03:42.360 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.StudentController#getAllStudent()
+2023-05-04 10:03:42.581 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/student", parameters={}
+2023-05-04 10:03:42.582 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.StudentController#getAllStudent()
+2023-05-04 10:03:42.583 INFO  c.I.I.service.StudentService - Get all Student
+2023-05-04 10:03:42.590 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-05-04 10:03:42.590 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[com.IMDdatabase.IMSWithDatabase.model.Student@5ed781ec, com.IMDdatabase.IMSWithDatabase.model.Stude (truncated)...]
+2023-05-04 10:03:42.592 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2023-05-04 10:04:02.934 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.StudentController#DeleteStudent(int)
+2023-05-04 10:04:02.944 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.StudentController#DeleteStudent(int)
+2023-05-04 10:04:03.158 DEBUG o.s.web.servlet.DispatcherServlet - DELETE "/api/student/10", parameters={}
+2023-05-04 10:04:03.159 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.StudentController#DeleteStudent(int)
+2023-05-04 10:04:03.163 INFO  c.I.I.service.StudentService - Het student with id: 10
+2023-05-04 10:04:03.228 INFO  c.I.I.service.StudentService - Deleted student with id: 10
+2023-05-04 10:04:03.231 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-05-04 10:04:03.232 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Optional[com.IMDdatabase.IMSWithDatabase.model.Student@b852249]]
+2023-05-04 10:04:03.233 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2023-05-04 10:04:08.748 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.StudentController#getAllStudent()
+2023-05-04 10:04:08.958 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/student", parameters={}
+2023-05-04 10:04:08.959 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.StudentController#getAllStudent()
+2023-05-04 10:04:08.960 INFO  c.I.I.service.StudentService - Get all Student
+2023-05-04 10:04:08.969 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-05-04 10:04:08.970 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[com.IMDdatabase.IMSWithDatabase.model.Student@144cc9d, com.IMDdatabase.IMSWithDatabase.model.Studen (truncated)...]
+2023-05-04 10:04:08.972 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2023-05-04 10:07:07.096 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.staffController#registerStaff(Staff)
+2023-05-04 10:07:07.101 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.staffController#registerStaff(Staff)
+2023-05-04 10:07:07.306 DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/staff", parameters={}
+2023-05-04 10:07:07.307 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.staffController#registerStaff(Staff)
+2023-05-04 10:07:07.386 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [com.IMDdatabase.IMSWithDatabase.model.Staff@660a9b09]
+2023-05-04 10:07:07.546 INFO  c.I.I.service.StudentService - Register staff with id: 1
+2023-05-04 10:07:07.552 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-05-04 10:07:07.553 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [com.IMDdatabase.IMSWithDatabase.model.Staff@660a9b09]
+2023-05-04 10:07:07.556 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2023-05-04 10:07:16.263 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.staffController#getStaff()
+2023-05-04 10:07:16.602 WARN  o.a.c.util.SessionIdGeneratorBase - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [290] milliseconds.
+2023-05-04 10:07:16.612 DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2023-05-04 10:07:16.614 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2023-05-04 10:07:16.750 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+2023-05-04 10:07:16.772 DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 401
+2023-05-04 10:07:59.346 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.staffController#getStaff()
+2023-05-04 10:07:59.355 DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2023-05-04 10:07:59.356 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2023-05-04 10:07:59.359 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+2023-05-04 10:07:59.360 DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 401
+2023-05-04 10:15:21.477 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.StudentController#getAllStudent()
+2023-05-04 10:15:21.689 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/student", parameters={}
+2023-05-04 10:15:21.690 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.StudentController#getAllStudent()
+2023-05-04 10:15:21.727 INFO  c.I.I.service.StudentService - Get all Student
+2023-05-04 10:15:21.884 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-05-04 10:15:21.885 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[com.IMDdatabase.IMSWithDatabase.model.Student@42919d01, com.IMDdatabase.IMSWithDatabase.model.Stude (truncated)...]
+2023-05-04 10:15:21.894 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2023-05-04 10:21:09.908 WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m54s632ms394µs500ns).
+2023-05-04 10:50:02.108 WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m52s136ms923µs300ns).
+2023-05-04 11:05:41.823 WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m7s894ms622µs600ns).
+2023-05-04 11:15:32.332 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.StudentController#registerStudent(Student)
+2023-05-04 11:15:32.434 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.StudentController#registerStudent(Student)
+2023-05-04 11:15:32.743 DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/student", parameters={}
+2023-05-04 11:15:32.745 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.StudentController#registerStudent(Student)
+2023-05-04 11:15:32.850 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [com.IMDdatabase.IMSWithDatabase.model.Student@7c24717b]
+2023-05-04 11:15:33.078 INFO  c.I.I.service.StudentService - Created student with id: 13
+2023-05-04 11:15:33.105 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-05-04 11:15:33.106 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [com.IMDdatabase.IMSWithDatabase.model.Student@7c24717b]
+2023-05-04 11:15:33.119 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2023-05-04 11:16:29.601 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.StudentControllerWithImage#registerStudent(String, String, MultipartFile)
+2023-05-04 11:16:29.615 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.StudentControllerWithImage#registerStudent(String, String, MultipartFile)
+2023-05-04 11:16:29.929 DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/student/withImage", parameters={multipart}
+2023-05-04 11:16:29.935 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.StudentControllerWithImage#registerStudent(String, String, MultipartFile)
+2023-05-04 11:16:29.996 INFO  c.I.I.service.StudentService - Created student with id: 14
+2023-05-04 11:16:30.027 INFO  c.I.I.service.StudentService - Het student with id: 14
+2023-05-04 11:16:30.091 INFO  c.I.I.service.StudentService - updated student with id: 14
+2023-05-04 11:16:30.093 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-05-04 11:16:30.093 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [com.IMDdatabase.IMSWithDatabase.model.Student@5655577b]
+2023-05-04 11:16:30.098 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2023-05-04 11:16:37.022 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.StudentController#getAllStudent()
+2023-05-04 11:16:37.254 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/student", parameters={}
+2023-05-04 11:16:37.258 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.StudentController#getAllStudent()
+2023-05-04 11:16:37.259 INFO  c.I.I.service.StudentService - Get all Student
+2023-05-04 11:16:37.351 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-05-04 11:16:37.352 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[com.IMDdatabase.IMSWithDatabase.model.Student@7f0b224, com.IMDdatabase.IMSWithDatabase.model.Studen (truncated)...]
+2023-05-04 11:16:37.357 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2023-05-04 11:16:48.700 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.StudentController#getStudent(int)
+2023-05-04 11:16:48.729 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.StudentController#getStudent(int)
+2023-05-04 11:16:48.968 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/student/12", parameters={}
+2023-05-04 11:16:48.971 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.StudentController#getStudent(int)
+2023-05-04 11:16:48.981 INFO  c.I.I.service.StudentService - Het student with id: 12
+2023-05-04 11:16:48.997 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-05-04 11:16:48.999 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Optional[com.IMDdatabase.IMSWithDatabase.model.Student@4aed0642]]
+2023-05-04 11:16:49.005 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2023-05-04 11:16:49.015 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.StudentControllerWithImage#getStudentWithImage(int)
+2023-05-04 11:16:49.022 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.StudentControllerWithImage#getStudentWithImage(int)
+2023-05-04 11:16:49.256 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/student/withImage/12", parameters={}
+2023-05-04 11:16:49.257 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.StudentControllerWithImage#getStudentWithImage(int)
+2023-05-04 11:16:49.259 INFO  c.I.I.service.StudentService - Het student with id: 12
+2023-05-04 11:16:49.294 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Found 'Content-Type:image/jpeg' in response
+2023-05-04 11:16:49.309 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{-1, -40, -1, -32, 0, 16, 74, 70, 73, 70, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, -1, -31, 0, 46, 69, 120, 105 (truncated)...]
+2023-05-04 11:16:49.314 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2023-05-04 11:19:24.093 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.staffController#registerStaff(Staff)
+2023-05-04 11:19:24.136 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.staffController#registerStaff(Staff)
+2023-05-04 11:19:24.390 DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/staff", parameters={}
+2023-05-04 11:19:24.390 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.staffController#registerStaff(Staff)
+2023-05-04 11:19:24.424 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [com.IMDdatabase.IMSWithDatabase.model.Staff@505978aa]
+2023-05-04 11:19:24.500 INFO  c.I.I.service.StudentService - Register staff with id: 2
+2023-05-04 11:19:24.506 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-05-04 11:19:24.506 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [com.IMDdatabase.IMSWithDatabase.model.Staff@505978aa]
+2023-05-04 11:19:24.512 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2023-05-04 11:32:28.259 WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m15s469ms205µs200ns).
+2023-05-04 17:02:44.018 WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5h28m15s746ms81µs200ns).
+2023-05-04 17:03:24.561 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.StudentController#getAllStudent()
+2023-05-04 17:03:24.593 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.StudentController#getAllStudent()
+2023-05-04 17:03:24.847 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/student", parameters={}
+2023-05-04 17:03:24.848 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.StudentController#getAllStudent()
+2023-05-04 17:03:24.870 INFO  c.I.I.service.StudentService - Get all Student
+2023-05-04 17:03:24.975 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-05-04 17:03:24.976 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[com.IMDdatabase.IMSWithDatabase.model.Student@3240a9b2, com.IMDdatabase.IMSWithDatabase.model.Stude (truncated)...]
+2023-05-04 17:03:24.990 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2023-05-04 17:03:35.779 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.StudentController#DeleteStudent(int)
+2023-05-04 17:03:35.791 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.StudentController#DeleteStudent(int)
+2023-05-04 17:03:35.931 DEBUG o.s.web.servlet.DispatcherServlet - DELETE "/api/student/13", parameters={}
+2023-05-04 17:03:35.934 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.StudentController#DeleteStudent(int)
+2023-05-04 17:03:35.945 INFO  c.I.I.service.StudentService - Het student with id: 13
+2023-05-04 17:03:36.007 INFO  c.I.I.service.StudentService - Deleted student with id: 13
+2023-05-04 17:03:36.012 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-05-04 17:03:36.013 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Optional[com.IMDdatabase.IMSWithDatabase.model.Student@3a4686f7]]
+2023-05-04 17:03:36.016 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2023-05-04 17:03:38.504 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.StudentController#getAllStudent()
+2023-05-04 17:03:38.575 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.StudentController#getAllStudent()
+2023-05-04 17:03:38.742 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/student", parameters={}
+2023-05-04 17:03:38.743 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.StudentController#getAllStudent()
+2023-05-04 17:03:38.744 INFO  c.I.I.service.StudentService - Get all Student
+2023-05-04 17:03:38.754 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-05-04 17:03:38.755 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[com.IMDdatabase.IMSWithDatabase.model.Student@5a654b83, com.IMDdatabase.IMSWithDatabase.model.Stude (truncated)...]
+2023-05-04 17:03:38.758 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2023-05-04 17:03:46.967 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.StudentControllerWithImage#registerStudent(String, String, MultipartFile)
+2023-05-04 17:03:46.973 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.StudentControllerWithImage#registerStudent(String, String, MultipartFile)
+2023-05-04 17:03:47.163 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.StudentControllerWithImage#registerStudent(String, String, MultipartFile)
+2023-05-04 17:03:47.168 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.StudentControllerWithImage#registerStudent(String, String, MultipartFile)
+2023-05-04 17:03:47.193 DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/student/withImage", parameters={multipart}
+2023-05-04 17:03:47.195 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.StudentControllerWithImage#registerStudent(String, String, MultipartFile)
+2023-05-04 17:03:47.226 INFO  c.I.I.service.StudentService - Created student with id: 15
+2023-05-04 17:03:47.227 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-05-04 17:03:47.228 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [com.IMDdatabase.IMSWithDatabase.model.Student@65af5047]
+2023-05-04 17:03:47.233 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2023-05-04 17:03:47.367 DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/student/withImage", parameters={multipart}
+2023-05-04 17:03:47.368 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.StudentControllerWithImage#registerStudent(String, String, MultipartFile)
+2023-05-04 17:03:47.380 INFO  c.I.I.service.StudentService - Created student with id: 16
+2023-05-04 17:03:47.381 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-05-04 17:03:47.381 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [com.IMDdatabase.IMSWithDatabase.model.Student@67af701e]
+2023-05-04 17:03:47.383 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2023-05-04 17:03:53.200 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.StudentController#getAllStudent()
+2023-05-04 17:03:53.210 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.StudentController#getAllStudent()
+2023-05-04 17:03:53.418 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/student", parameters={}
+2023-05-04 17:03:53.419 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.IMDdatabase.IMSWithDatabase.controller.StudentController#getAllStudent()
+2023-05-04 17:03:53.421 INFO  c.I.I.service.StudentService - Get all Student
+2023-05-04 17:03:53.431 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-05-04 17:03:53.432 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[com.IMDdatabase.IMSWithDatabase.model.Student@682d1e80, com.IMDdatabase.IMSWithDatabase.model.Stude (truncated)...]
+2023-05-04 17:03:53.434 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2023-05-04 17:05:01.764 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-04 17:05:01.844 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-05-04 17:05:01.863 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
